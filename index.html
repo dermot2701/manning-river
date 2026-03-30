@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Croker Oars — Faster. Tougher. Proven. | Racing Oars & Sculls</title>
+<meta name="description" content="Croker Oars: Australian-made racing oars independently tested faster than Concept2. 50+ years of family craftsmanship from the Manning River. Faster. Tougher. Proven.">
+<meta name="keywords" content="Croker Oars, racing oars, sculls, rowing oars, fastest rowing oars, Concept2 alternative, carbon fibre oars, coastal rowing oars">
+<link rel="canonical" href="https://crokeroars.com">
+<meta property="og:title" content="Croker Oars — Faster. Tougher. Proven.">
+<meta property="og:description" content="The only racing oar independently tested faster than Concept2. Built on the Manning River, Australia for over 50 years.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://crokeroars.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Croker Oars — Faster. Tougher. Proven.">
+<meta name="twitter:description" content="The only racing oar independently tested faster than Concept2. Built on the Manning River, Australia for over 50 years.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Croker Oars","url":"https://crokeroars.com","foundingDate":"1962","founder":{"@type":"Person","name":"Howard Croker OAM"},"address":{"@type":"PostalAddress","addressLocality":"Manning River","addressRegion":"NSW","addressCountry":"AU"},"description":"Australian manufacturer of elite racing oars and sculls since 1962."}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --pink: #FF2D78;
+  --pink-dark: #D4215F;
+  --navy: #0B1D3A;
+  --navy-deep: #06111F;
+  --white: #FFFFFF;
+  --light: #F5F5F5;
+  --grey: #8892A0;
+  --text: #C8CFD8;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; font-weight: 400; color: var(--text); line-height: 1.7; font-size: 16px; background: var(--navy); }
+h1, h2, h3, h4, h5 { font-family: 'Montserrat', sans-serif; line-height: 1.1; }
+a { color: inherit; text-decoration: none; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; transition: background 0.3s, box-shadow 0.3s; }
+.nav.scrolled { background: var(--navy); box-shadow: 0 2px 20px rgba(0,0,0,0.4); }
+.nav-logo { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; color: var(--white); letter-spacing: 0.05em; }
+.nav-logo span { color: var(--pink); }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; color: var(--white); letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.85; transition: opacity 0.2s, color 0.2s; }
+.nav-links a:hover { opacity: 1; color: var(--pink); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--white); transition: transform 0.3s, opacity 0.3s; }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* HERO */
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 120px 24px 80px; background: var(--navy); position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: -20%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,45,120,0.12) 0%, transparent 70%); pointer-events: none; }
+.hero::after { content: ''; position: absolute; bottom: -10%; left: -5%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,45,120,0.06) 0%, transparent 70%); pointer-events: none; }
+.hero-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--pink); margin-bottom: 24px; }
+.hero h1 { font-size: clamp(48px, 8vw, 96px); font-weight: 900; color: var(--white); margin-bottom: 24px; letter-spacing: -0.02em; }
+.hero h1 span { color: var(--pink); }
+.hero-sub { font-size: clamp(16px, 2vw, 20px); color: var(--text); max-width: 640px; margin-bottom: 48px; font-weight: 300; }
+.hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; padding: 16px 36px; border-radius: 4px; transition: all 0.3s; cursor: pointer; border: none; }
+.btn-pink { background: var(--pink); color: var(--white); }
+.btn-pink:hover { background: var(--pink-dark); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255,45,120,0.3); }
+.btn-ghost { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.3); }
+.btn-ghost:hover { border-color: var(--white); transform: translateY(-2px); }
+
+/* SECTIONS */
+.section { padding: 100px 24px; }
+.section-dark { background: var(--navy); }
+.section-darker { background: var(--navy-deep); }
+.section-light { background: var(--light); color: #1a1a2e; }
+.section-pink { background: var(--pink); }
+.container { max-width: 1100px; margin: 0 auto; }
+.section-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--pink); margin-bottom: 16px; }
+.section-light .section-eyebrow { color: var(--pink-dark); }
+.section-title { font-size: clamp(32px, 5vw, 52px); font-weight: 900; color: var(--white); margin-bottom: 24px; }
+.section-light .section-title { color: var(--navy); }
+.section-text { font-size: 17px; max-width: 720px; line-height: 1.8; }
+.section-light .section-text { color: #3a3a5c; }
+
+/* PILLARS */
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 60px; }
+.pillar-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 40px 32px; transition: transform 0.3s, border-color 0.3s; }
+.pillar-card:hover { transform: translateY(-4px); border-color: var(--pink); }
+.pillar-icon { width: 56px; height: 56px; background: rgba(255,45,120,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
+.pillar-icon svg { width: 28px; height: 28px; fill: none; stroke: var(--pink); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.pillar-card h3 { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 800; color: var(--white); margin-bottom: 16px; }
+.pillar-card p { font-size: 15px; color: var(--grey); line-height: 1.7; }
+
+/* STATS ROW */
+.stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 48px 0; }
+.stat-box { text-align: center; padding: 32px 16px; }
+.section-light .stat-box { background: var(--white); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.stat-box .stat-value { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 900; color: var(--pink); margin-bottom: 8px; }
+.section-light .stat-box .stat-value { color: var(--pink-dark); }
+.stat-box .stat-label { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--grey); }
+.section-light .stat-box .stat-label { color: #5a5a7a; }
+
+/* QUOTE */
+.quote { border-left: 3px solid var(--pink); padding: 24px 0 24px 32px; margin: 40px 0; }
+.quote p { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 700; font-style: italic; color: var(--white); line-height: 1.5; }
+.section-light .quote p { color: var(--navy); }
+
+/* ATHLETES */
+.athlete-name { font-family: 'Montserrat', sans-serif; font-size: clamp(28px, 4vw, 42px); font-weight: 900; color: var(--white); margin-bottom: 8px; }
+.athlete-stats { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: var(--pink); letter-spacing: 0.05em; margin-bottom: 32px; }
+
+/* BOLT FEATURES */
+.features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px; }
+.feature-item { display: flex; align-items: center; gap: 16px; padding: 20px 24px; background: rgba(255,45,120,0.06); border: 1px solid rgba(255,45,120,0.15); border-radius: 6px; }
+.feature-check { color: var(--pink); font-size: 20px; font-weight: 700; flex-shrink: 0; }
+.feature-item span { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--white); }
+
+/* CHALLENGER */
+.challenger-text { font-size: clamp(40px, 7vw, 80px); font-weight: 900; color: var(--white); line-height: 1.05; margin-bottom: 8px; }
+.challenger-text .pink { color: var(--pink); }
+.challenger-body { font-size: 18px; max-width: 700px; margin-top: 32px; line-height: 1.8; }
+.challenger-sub { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: var(--pink); margin-top: 24px; font-style: italic; }
+
+/* HERITAGE STATS */
+.heritage-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+.heritage-stat { text-align: center; padding: 24px 16px; background: var(--white); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.heritage-stat .hs-value { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: var(--navy); margin-bottom: 6px; }
+.heritage-stat .hs-label { font-size: 13px; color: #5a5a7a; font-weight: 500; }
+
+/* CTA SECTION */
+.section-pink { text-align: center; }
+.section-pink h2 { font-size: clamp(28px, 4vw, 44px); font-weight: 900; color: var(--white); margin-bottom: 32px; }
+.section-pink .btn { margin: 0 8px; }
+.btn-white { background: var(--white); color: var(--pink); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; padding: 16px 36px; border-radius: 4px; border: none; cursor: pointer; transition: all 0.3s; display: inline-block; }
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+.btn-ghost-white { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; padding: 16px 36px; border-radius: 4px; cursor: pointer; transition: all 0.3s; display: inline-block; }
+.btn-ghost-white:hover { border-color: var(--white); transform: translateY(-2px); }
+
+/* FOOTER */
+footer { background: var(--navy-deep); padding: 60px 24px 32px; border-top: 1px solid rgba(255,255,255,0.06); }
+.footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 40px; }
+.footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 20px; color: var(--white); margin-bottom: 8px; }
+.footer-brand span { color: var(--pink); }
+.footer-tagline { font-size: 14px; color: var(--grey); margin-bottom: 16px; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-links a { font-size: 14px; color: var(--grey); transition: color 0.2s; }
+.footer-links a:hover { color: var(--pink); }
+.footer-bottom { max-width: 1100px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 13px; color: var(--grey); text-align: center; }
+
+/* ANIMATIONS */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav { padding: 14px 20px; }
+  .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--navy); flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 18px; }
+  .hamburger { display: flex; }
+  .section { padding: 64px 20px; }
+  .pillars { grid-template-columns: 1fr; }
+  .stats-row { grid-template-columns: 1fr; gap: 16px; }
+  .features-grid { grid-template-columns: 1fr; }
+  .heritage-stats { grid-template-columns: repeat(2, 1fr); }
+  .hero { padding: 100px 20px 60px; }
+  .footer-inner { flex-direction: column; gap: 24px; }
+  .section-pink .btn, .section-pink .btn-white, .section-pink .btn-ghost-white { display: block; margin: 8px auto; width: 80%; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">CROKER <span>OARS</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#why-croker" onclick="closeMenu()">Why Croker</a></li>
+    <li><a href="#performance" onclick="closeMenu()">Performance</a></li>
+    <li><a href="#athletes" onclick="closeMenu()">Athletes</a></li>
+    <li><a href="#innovation" onclick="closeMenu()">Innovation</a></li>
+    <li><a href="#coastal" onclick="closeMenu()">Coastal</a></li>
+    <li><a href="#heritage" onclick="closeMenu()">Heritage</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Australian Made &middot; Since 1962</div>
+  <h1>Faster. Tougher.<br><span>Proven.</span></h1>
+  <p class="hero-sub">The only racing oar independently tested faster than Concept2. Built on the Manning River, Australia for over 50 years.</p>
+  <div class="hero-buttons">
+    <a href="#why-croker" class="btn btn-pink">Discover Why &rarr;</a>
+    <a href="https://crokeroars.com" target="_blank" rel="noopener" class="btn btn-ghost">View Our Oars &rarr;</a>
+  </div>
+</section>
+
+<!-- WHY CROKER -->
+<section class="section section-dark" id="why-croker">
+  <div class="container fade-in">
+    <div class="section-eyebrow">The Three Pillars</div>
+    <div class="section-title">Why Champions Choose Croker</div>
+    <div class="pillars">
+      <div class="pillar-card">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>Proven Faster</h3>
+        <p>GB Rowing conducted independent speed tests across all oar categories. Croker outperformed Concept2 in every single one. Not marketing — measured, on-water data.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Most Durable</h3>
+        <p>In independent durability testing, Croker oars outlasted the competition. Built with precision carbon fibre and 50 years of manufacturing expertise on the Manning River.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Best Service</h3>
+        <p>The only manufacturer offering personalised erg-score-based shaft stiffness recommendations. Call us — you'll speak to the people who made your oars.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GB ROWING / PERFORMANCE -->
+<section class="section section-light" id="performance">
+  <div class="container fade-in">
+    <div class="section-eyebrow">Independent Testing</div>
+    <div class="section-title">The Speed Test That Changed Everything</div>
+    <p class="section-text">When GB Rowing — one of the most successful Olympic rowing programmes in history — conducted independent speed tests comparing the world's leading oar brands, Croker outperformed Concept2 in every category. Not by marketing claims. By measured, on-water performance.</p>
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">Categories Won</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">GB Rowing</div>
+        <div class="stat-label">Independent Testing</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">On-Water</div>
+        <div class="stat-label">Real Conditions Proof</div>
+      </div>
+    </div>
+    <div class="quote">
+      <p>"Market share isn't a speed test. GB Rowing did the speed test."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ATHLETES -->
+<section class="section section-darker" id="athletes">
+  <div class="container fade-in">
+    <div class="section-eyebrow">Featured Athletes</div>
+    <div class="section-title">Trusted by Champions</div>
+    <div class="athlete-name">Martin &amp; Valent Sinkovi&#263;</div>
+    <div class="athlete-stats">3&times; Olympic Gold &middot; 6&times; World Champions &middot; Croatia</div>
+    <p class="section-text">The Sinkovi&#263; brothers — the most decorated rowing pair in history — choose Croker. Not because of sponsorship. Because of speed, feel, and durability.</p>
+    <p class="section-text" style="margin-top:20px; color: var(--grey); font-style: italic;">When athletes at this level have access to any equipment in the world, their choice tells you everything.</p>
+  </div>
+</section>
+
+<!-- BOLT BLADE / INNOVATION -->
+<section class="section section-dark" id="innovation">
+  <div class="container fade-in">
+    <div class="section-eyebrow">Innovation</div>
+    <div class="section-title">The Croker Bolt</div>
+    <p class="section-text" style="color: var(--pink); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px; margin-bottom: 24px;">Tractrix-Curve Geometry. Zero Compromise.</p>
+    <p class="section-text">Traditional oar blades lose up to 10% of applied energy through blade slip. The Bolt's permanently moulded hydrodynamic edge, engineered using Tractrix-curve geometry backed by University of Porto research, captures energy that other blades waste.</p>
+    <div class="features-grid">
+      <div class="feature-item"><span class="feature-check">&check;</span><span>Tractrix-curve geometry</span></div>
+      <div class="feature-item"><span class="feature-check">&check;</span><span>Permanently moulded hydrodynamic edge</span></div>
+      <div class="feature-item"><span class="feature-check">&check;</span><span>Reduced blade slip</span></div>
+      <div class="feature-item"><span class="feature-check">&check;</span><span>University of Porto validated</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- COASTAL ROWING -->
+<section class="section section-light" id="coastal">
+  <div class="container fade-in">
+    <div class="section-eyebrow">Coastal Rowing</div>
+    <div class="section-title">Built for Real Conditions</div>
+    <p class="section-text" style="color: var(--pink-dark); font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px; margin-bottom: 24px;">When the water fights back, reach for the pink sleeve.</p>
+    <p class="section-text">Coastal rowing is the fastest-growing discipline in the sport — and it's now Olympic. While other oars were designed for protected flatwater courses, Croker blades deliver stability and clean catch in rough water, tidal conditions, and open ocean.</p>
+    <div class="quote" style="margin-top: 40px;">
+      <p>"Concept2 was designed for protected Olympic courses. We were designed for the ocean."</p>
+    </div>
+    <p class="section-text" style="margin-top: 24px;"><strong>The Croker Slick on S3 shaft:</strong> solid but forgiving catch, strong mid-drive loading, clean entry/exit, nimble in all conditions. The S3's 50/50 carbon/glass construction and UV-resistant white epoxy coating are purpose-built for beach-launched boats.</p>
+  </div>
+</section>
+
+<!-- 96% FOLLOWED -->
+<section class="section section-darker" id="challenger">
+  <div class="container fade-in">
+    <div class="challenger-text">96% followed.</div>
+    <div class="challenger-text"><span class="pink">We led.</span></div>
+    <p class="challenger-body">Concept2 claims 96% of Olympic oar usage. But market share isn't proof of performance — it's proof of marketing. The athletes who question the default, who test before they trust, who choose based on data rather than convention — they choose Croker.</p>
+    <p class="challenger-sub">"Concept2 makes great indoor rowing machines. We make great oars. 100% of our focus is on the blade in your hand."</p>
+  </div>
+</section>
+
+<!-- HERITAGE -->
+<section class="section section-light" id="heritage">
+  <div class="container fade-in">
+    <div class="section-eyebrow">Our Story</div>
+    <div class="section-title">50 Years on the Manning River</div>
+    <p class="section-text">Founded by Howard Croker OAM on Oxley Island, NSW, Croker Oars has been crafting racing oars for over half a century. Today, Howard and his son Darren continue the tradition — every oar personally overseen, every customer personally served.</p>
+    <p class="section-text" style="margin-top: 16px;">The signature pink sleeve isn't just a colour. It's a promise.</p>
+    <div class="heritage-stats">
+      <div class="heritage-stat"><div class="hs-value">50+</div><div class="hs-label">Years</div></div>
+      <div class="heritage-stat"><div class="hs-value">Family</div><div class="hs-label">Owned &amp; Run</div></div>
+      <div class="heritage-stat"><div class="hs-value">Manning River</div><div class="hs-label">NSW, Australia</div></div>
+      <div class="heritage-stat"><div class="hs-value">Howard Croker</div><div class="hs-label">OAM, Founder</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-pink">
+  <div class="container">
+    <h2>Ready to Feel the Difference?</h2>
+    <div>
+      <a href="https://crokeroars.com" target="_blank" rel="noopener" class="btn-white">Shop Croker Oars</a>
+      <a href="https://crokerusa.com" target="_blank" rel="noopener" class="btn-ghost-white">Croker USA</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">CROKER <span>OARS</span></div>
+      <div class="footer-tagline">Faster. Tougher. Proven.</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#why-croker">Why Croker</a></li>
+      <li><a href="#performance">Performance</a></li>
+      <li><a href="#athletes">Athletes</a></li>
+      <li><a href="#innovation">Innovation</a></li>
+      <li><a href="#coastal">Coastal</a></li>
+      <li><a href="#heritage">Heritage</a></li>
+    </ul>
+    <ul class="footer-links">
+      <li><a href="https://crokeroars.com" target="_blank" rel="noopener">crokeroars.com</a></li>
+      <li><a href="https://crokerusa.com" target="_blank" rel="noopener">crokerusa.com</a></li>
+      <li><a href="strategy.html">Brand Strategy</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Croker Oars. Oxley Island, Manning River, NSW, Australia.</div>
+</footer>
+
+<script>
+// Nav scroll effect
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Mobile menu
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+
+// Fade-in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
